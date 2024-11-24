@@ -1,0 +1,81 @@
+*{
+    border: solid 1px red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+  }
+
+  :root{
+  --text-small: .8125rem;
+  --text-big: 1.25rem;
+  }
+
+.flow > * + * {
+      margin-top: var(--flow-space, 1.5rem);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.review-card {
+    min-width: 327px;
+   
+}
+
+.card-header{
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.attribution{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name, .sub-name{
+    font-size: 1rem;
+}
+
+.big-quote{
+
+}
+
+.full-quote{
+
+}
+
+img{
+    border-radius: 50%;
+    position: relative;
+}
+
+/*
+  main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .daniel{
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .kira{
+    grid-area: 1 / 4 / 3 / 5;
+  }
+
+  .patrick{
+    grid-area: 2 / 2 / 3 / 4;
+  }
+*/
+  
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
