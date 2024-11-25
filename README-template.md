@@ -60,27 +60,20 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- position: relative Creates a Local Stacking Context with z-index:
 
-To see how you can add code snippets, see below:
+- When you assign a z-index to an element, its position property must be set to relative, absolute, or fixed for the z-index to apply.
+Without a valid position value, the z-index has no effect.
+Stacking Contexts Influence Layering:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+A stacking context isolates elements inside it. Child elements with z-index are layered relative to each other within that context, but they don't interact with elements outside the context.
+A z-index value on an element without a stacking context (parent) won't influence other sibling elements properly.
+When position: relative Does Not Create a Stacking Context:
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+position: relative alone does not create a stacking context unless the element also has a z-index value other than auto.
+However, child elements within it can use their own z-index values relative to their parent.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- being unfamiliar with .flow function I forgot that it added margins to everything except the daniel card and that you can create local variables for the margins for the flow in local areas. So once I finally found that the grid worked fine because it looked like Daniel's card was too tall. 
 
 ### Continued development
 
