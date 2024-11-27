@@ -75,6 +75,10 @@ However, child elements within it can use their own z-index values relative to t
 
 - being unfamiliar with .flow function I forgot that it added margins to everything except the daniel card and that you can create local variables for the margins for the flow in local areas. So once I finally found that the grid worked fine because it looked like Daniel's card was too tall. 
 
+- I also forgot that I set up some widths and heights for the cards that were carried over to the media query and that you need to explicitely override them so when I was adjusting the grid there were some very weird spacing issues that happened until I made max-width: none, and then it worked out as you expect with the cards being as wide as the columns as you move the viewport. 
+
+- Hardest issue was to get the proportions right without using absolute fixed values which is not very easy to do, you just have to eye-ball it in a way, maybe there's better ways of doing that. I had to adjust Kira's line height manually as it was stopping way too high up from the bottom of the card. It's not scalable for if it had to be scalable I probably would just have left it be. 
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
